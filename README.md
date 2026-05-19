@@ -22,7 +22,7 @@ IRONFORGE GYM is a responsive gym and fitness website developed using HTML, CSS,
 
 This project was created as a web development practical/project to demonstrate frontend development skills using HTML, CSS, and JavaScript.
 
-<b>##Screenshot<b>
+<b>##SCREENSHOT<b>
 <img width="1910" height="906" alt="image" src="https://github.com/user-attachments/assets/6c314f0b-dc4c-4d37-b961-835006eb58b7" />
 <img width="1914" height="896" alt="image" src="https://github.com/user-attachments/assets/8dcf9023-dcb7-4b46-8196-1d0435b40a7a" />
 <img width="1912" height="908" alt="image" src="https://github.com/user-attachments/assets/cef63504-c22c-4452-bdd1-7ad9578fe7f2" />
