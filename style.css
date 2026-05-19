@@ -1,0 +1,428 @@
+/* style.css */
+
+body {
+
+  margin: 0;
+
+  font-family: 'Barlow', sans-serif;
+
+  color: white;
+
+  background: black;
+}
+
+/* NAVBAR */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 40px;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(0,0,0,0.6);
+
+  backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+
+  font-family: 'Bebas Neue';
+
+  font-size: 35px;
+}
+
+.nav-logo span {
+
+  color: red;
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 25px;
+
+  list-style: none;
+}
+
+.nl {
+
+  cursor: pointer;
+
+  color: gray;
+
+  transition: 0.3s;
+}
+
+.nl:hover {
+
+  color: white;
+}
+
+.nl.on {
+
+  color: red;
+}
+
+/* PAGE */
+
+.page {
+
+  display: none;
+
+  min-height: 100vh;
+
+  padding: 40px;
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.page.on {
+
+  display: block;
+}
+
+/* DIFFERENT BACKGROUNDS */
+
+#pg-home {
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600');
+}
+
+#pg-bmi {
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1600');
+}
+
+#pg-packages {
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600');
+}
+
+#pg-contact {
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?q=80&w=1600');
+}
+
+/* HERO */
+
+.hero {
+
+  height: 85vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.bg-video {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: 0.3;
+}
+
+.hero-content {
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.hero h1 {
+
+  font-size: 90px;
+
+  margin: 0;
+}
+
+.hero span {
+
+  color: red;
+}
+
+.hero p {
+
+  font-size: 25px;
+
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.btn-red {
+
+  background: red;
+
+  color: white;
+
+  padding: 14px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+
+  background: #ff2e2e;
+
+  transform: scale(1.05);
+}
+
+/* INPUT */
+
+input,
+textarea,
+select {
+
+  width: 100%;
+
+  padding: 14px;
+
+  margin: 12px 0;
+
+  border-radius: 10px;
+
+  border: none;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 16px;
+}
+
+select option {
+
+  background: black;
+}
+
+textarea {
+
+  height: 120px;
+}
+
+/* BMI */
+
+.bmi-card {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  background: rgba(255,255,255,0.08);
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+}
+
+#bmiResult {
+
+  color: red;
+
+  font-size: 35px;
+}
+
+#bmiCategory {
+
+  font-size: 28px;
+}
+
+#suggestions {
+
+  margin-top: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  padding: 20px;
+
+  border-radius: 15px;
+}
+
+/* DIET */
+
+.diet-chart {
+
+  margin-top: 20px;
+}
+
+.meal {
+
+  background: rgba(255,255,255,0.06);
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  margin-top: 10px;
+}
+
+.meal span {
+
+  color: red;
+
+  font-weight: bold;
+}
+
+/* PACKAGE */
+
+.pkg {
+
+  margin-top: 20px;
+
+  background: rgba(255,255,255,0.06);
+
+  padding: 20px;
+
+  border-radius: 15px;
+}
+
+.pkg h2 {
+
+  color: red;
+}
+
+/* MEMBERSHIP */
+
+.pkg-title {
+
+  text-align: center;
+
+  font-size: 60px;
+
+  margin-bottom: 40px;
+}
+
+.package-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px,1fr));
+
+  gap: 30px;
+}
+
+.membership-card {
+
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.membership-card:hover {
+
+  transform: translateY(-10px);
+
+  box-shadow: 0 0 20px rgba(255,0,0,0.3);
+}
+
+.membership-card img {
+
+  width: 100%;
+
+  height: 250px;
+
+  object-fit: cover;
+}
+
+.membership-content {
+
+  padding: 25px;
+}
+
+.membership-content h2 {
+
+  color: red;
+
+  font-size: 40px;
+}
+
+.membership-content ul {
+
+  padding-left: 20px;
+}
+
+.membership-content li {
+
+  margin-bottom: 10px;
+}
+
+.trainer {
+
+  margin-top: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  padding: 12px;
+
+  border-radius: 10px;
+}
+
+.trainer span {
+
+  color: red;
+
+  font-weight: bold;
+}
+
+/* CONTACT */
+
+.contact-card {
+
+  max-width: 600px;
+
+  margin: auto;
+
+  background: rgba(255,255,255,0.08);
+
+  padding: 35px;
+
+  border-radius: 20px;
+}

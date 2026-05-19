@@ -1,0 +1,346 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IRONFORGE GYM</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="nav-logo">
+      IRON<span>FORGE</span>
+    </div>
+
+    <ul class="nav-links">
+
+      <li>
+        <a class="nl on" data-s="home">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a class="nl" data-s="bmi">
+          BMI
+        </a>
+      </li>
+
+      <li>
+        <a class="nl" data-s="packages">
+          Packages
+        </a>
+      </li>
+
+      <li>
+        <a class="nl" data-s="contact">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <main>
+
+    <!-- HOME -->
+
+    <section class="page on" id="pg-home">
+
+      <div class="hero">
+
+        <video autoplay muted loop class="bg-video">
+
+          <source
+            src="https://cdn.coverr.co/videos/coverr-man-doing-crossfit-1567849573456?download=1080p"
+            type="video/mp4"
+          >
+
+        </video>
+
+        <div class="hero-content">
+
+          <h1>
+            PUSH YOUR <span>LIMITS</span>
+          </h1>
+
+          <p>
+            Build Strength. Burn Fat. Transform Yourself.
+          </p>
+
+          <button class="btn-red" data-s="bmi">
+            Check BMI
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BMI SECTION -->
+
+    <section class="page" id="pg-bmi">
+
+      <div class="bmi-card">
+
+        <h1>BMI CALCULATOR</h1>
+
+        <input
+          type="number"
+          id="wt"
+          placeholder="Enter Weight (kg)"
+        >
+
+        <input
+          type="number"
+          id="ht"
+          placeholder="Enter Height (cm)"
+        >
+
+        <!-- GENDER ADDED -->
+
+        <select id="gender">
+
+          <option value="male">
+            Male
+          </option>
+
+          <option value="female">
+            Female
+          </option>
+
+        </select>
+
+        <select id="foodType">
+
+          <option value="veg">
+            Vegetarian
+          </option>
+
+          <option value="nonveg">
+            Non-Vegetarian
+          </option>
+
+        </select>
+
+        <button
+          class="btn-red"
+          onclick="calcBMI()"
+        >
+          Calculate BMI
+        </button>
+
+        <h2 id="bmiResult"></h2>
+
+        <h3 id="bmiCategory"></h3>
+
+        <div id="suggestions">
+
+          <p id="exercise"></p>
+
+          <div id="diet"></div>
+
+        </div>
+
+        <div id="packageCard"></div>
+
+      </div>
+
+    </section>
+
+    <!-- PACKAGES -->
+
+    <section class="page" id="pg-packages">
+
+      <h1 class="pkg-title">
+        MEMBERSHIP PACKAGES
+      </h1>
+
+      <div class="package-grid">
+
+        <!-- BEGINNER -->
+
+        <div class="membership-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200"
+            alt=""
+          >
+
+          <div class="membership-content">
+
+            <h2>BEGINNER</h2>
+
+            <h3>₹1499/month</h3>
+
+            <ul>
+
+              <li>✔ Full Gym Access</li>
+
+              <li>✔ Beginner Workout Plan</li>
+
+              <li>✔ Diet Plan Included</li>
+
+              <li>✔ Weekly Guidance</li>
+
+            </ul>
+
+            <div class="trainer">
+
+              Trainer:
+              <span>Rahul Sharma</span>
+
+            </div>
+
+            <button class="btn-red">
+              Join Now
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- PRO -->
+
+        <div class="membership-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200"
+            alt=""
+          >
+
+          <div class="membership-content">
+
+            <h2>PRO</h2>
+
+            <h3>₹2999/month</h3>
+
+            <ul>
+
+              <li>✔ HIIT Training</li>
+
+              <li>✔ Advanced Workouts</li>
+
+              <li>✔ Fat Loss Program</li>
+
+              <li>✔ Personal Guidance</li>
+
+            </ul>
+
+            <div class="trainer">
+
+              Trainer:
+              <span>Aman Verma</span>
+
+            </div>
+
+            <button class="btn-red">
+              Join Pro
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- PRO MAX -->
+
+        <div class="membership-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200"
+            alt=""
+          >
+
+          <div class="membership-content">
+
+            <h2>PRO MAX</h2>
+
+            <h3>₹4999/month</h3>
+
+            <ul>
+
+              <li>✔ Personal Trainer</li>
+
+              <li>✔ Premium Diet Plan</li>
+
+              <li>✔ Daily Monitoring</li>
+
+              <li>✔ Recovery Sessions</li>
+
+            </ul>
+
+            <div class="trainer">
+
+              Trainer:
+              <span>Arjun Mehta</span>
+
+            </div>
+
+            <button class="btn-red">
+              Join Elite
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="page" id="pg-contact">
+
+      <div class="contact-card">
+
+        <h1>CONTACT US</h1>
+
+        <input
+          type="text"
+          placeholder="Enter Name"
+        >
+
+        <input
+          type="email"
+          placeholder="Enter Email"
+        >
+
+        <textarea
+          placeholder="Enter Message"
+        ></textarea>
+
+        <button class="btn-red">
+          Send Message
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
